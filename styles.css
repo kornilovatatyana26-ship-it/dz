@@ -49,6 +49,33 @@ body {
   margin-bottom: 8px;
 }
 
+.progress-card {
+  border-left: 5px solid #f39c12;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  background: #256d85;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #17495a;
+}
+
+.is-complete {
+  border-left-color: #2f855a;
+}
+
 .footer {
   padding: 24px;
   text-align: center;
