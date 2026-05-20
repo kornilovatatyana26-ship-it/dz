@@ -76,6 +76,10 @@ body {
   border-left-color: #2f855a;
 }
 
+.note-card {
+  background: #fff8e8;
+}
+
 .footer {
   padding: 24px;
   text-align: center;
