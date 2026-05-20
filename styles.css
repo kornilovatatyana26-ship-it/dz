@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: #f7f4ee;
+}
+
+.hero {
+  padding: 56px 24px 40px;
+  text-align: center;
+  color: #ffffff;
+  background: #256d85;
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: 42px;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.content {
+  width: min(920px, calc(100% - 32px));
+  margin: 32px auto;
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  padding: 24px;
+  border: 1px solid #d6d3ca;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #17495a;
+}
+
+.card li {
+  margin-bottom: 8px;
+}
+
+.footer {
+  padding: 24px;
+  text-align: center;
+  color: #5b6472;
+}
