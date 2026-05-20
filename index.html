@@ -8,40 +8,17 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-text">
-      <p class="eyebrow">маленькая страница настроения</p>
-      <h1>Всем привет!</h1>
-      <p>Хорошего дня и отличного настроения.</p>
-      <button class="button" type="button" id="wishButton">Получить пожелание</button>
-    </div>
+  <main class="poster" aria-label="Хорошего дня">
+    <img class="poster-image" src="assets/cat-day-mockup.jpeg" alt="Котик с цветком и надписью Хорошего дня">
 
-    <figure class="pet-picture">
-      <img src="assets/cute-pets.png" alt="Милые котик и собачка">
-    </figure>
-  </header>
+    <button
+      class="prediction-button"
+      type="button"
+      id="predictionButton"
+      aria-label="получить ежедневное предсказание"
+    ></button>
 
-  <main class="content">
-    <section class="card wish-card">
-      <h2>Пожелание на сегодня</h2>
-      <p id="wishText">Пусть сегодня всё получится легко и спокойно.</p>
-    </section>
-
-    <section class="pet-notes" aria-label="Милые заметки">
-      <article class="mini-card">
-        <span aria-hidden="true">Котик</span>
-        <p>Побольше мягкости, тепла и маленьких радостей.</p>
-      </article>
-
-      <article class="mini-card">
-        <span aria-hidden="true">Собачка</span>
-        <p>Побольше улыбок, энергии и хороших новостей.</p>
-      </article>
-    </section>
+    <p class="prediction" id="predictionText" aria-live="polite"></p>
   </main>
-
-  <footer class="footer">
-    <p>Сделано с нежным настроением.</p>
-  </footer>
 </body>
 </html>
