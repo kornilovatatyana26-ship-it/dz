@@ -6,24 +6,36 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #1f2937;
-  background: #f7f4ee;
+  background: #fffaf0;
 }
 
 .hero {
-  padding: 56px 24px 40px;
+  min-height: 52vh;
+  padding: 72px 24px 56px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 16px;
   text-align: center;
-  color: #ffffff;
-  background: #256d85;
+  color: #153243;
+  background: #f7c873;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .hero h1 {
-  margin: 0 0 12px;
-  font-size: 42px;
+  margin: 0;
+  font-size: 56px;
 }
 
 .hero p {
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .content {
@@ -42,15 +54,15 @@ body {
 
 .card h2 {
   margin-top: 0;
-  color: #17495a;
+  color: #153243;
 }
 
 .card li {
   margin-bottom: 8px;
 }
 
-.progress-card {
-  border-left: 5px solid #f39c12;
+.wish-card {
+  border-left: 5px solid #2f855a;
 }
 
 .button {
@@ -61,19 +73,15 @@ body {
   padding: 0 18px;
   border: 0;
   border-radius: 8px;
-  color: #ffffff;
+  color: #fffaf0;
   font: inherit;
   font-weight: 700;
-  background: #256d85;
+  background: #153243;
   cursor: pointer;
 }
 
 .button:hover {
-  background: #17495a;
-}
-
-.is-complete {
-  border-left-color: #2f855a;
+  background: #24536d;
 }
 
 .footer {

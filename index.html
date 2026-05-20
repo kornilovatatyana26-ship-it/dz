@@ -3,44 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Учебный проект</title>
+  <title>Хорошего дня</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <header class="hero">
-    <h1>Мой учебный проект</h1>
-    <p>Простая страница для домашнего задания по Git.</p>
+    <p class="eyebrow">Мой первый сайт в репозитории</p>
+    <h1>Всем привет!</h1>
+    <p>Хорошего дня и отличного настроения.</p>
+    <button class="button" type="button" id="wishButton">Получить пожелание</button>
   </header>
 
   <main class="content">
     <section class="card">
-      <h2>О проекте</h2>
+      <h2>О сайте</h2>
       <p>
-        Эта страница показывает, что репозиторий создан, проект добавлен
-        локально, а изменения можно сохранять через коммиты.
+        Это маленькая веб-страница, которую можно открыть в браузере.
+        Она сделана для домашнего задания по Git и GitHub.
       </p>
     </section>
 
     <section class="card">
-      <h2>План работы</h2>
+      <h2>Что сделано</h2>
       <ol>
         <li>Создать репозиторий.</li>
-        <li>Добавить HTML-страницу.</li>
-        <li>Оформить страницу стилями.</li>
-        <li>Добавить немного JavaScript.</li>
+        <li>Добавить сайт на HTML, CSS и JavaScript.</li>
+        <li>Сделать несколько коммитов.</li>
+        <li>Создать отдельную ветку.</li>
+        <li>Отправить изменения на GitHub.</li>
       </ol>
     </section>
 
-    <section class="card progress-card">
-      <h2>Статус</h2>
-      <p id="statusText">Проект почти готов к отправке в удалённый репозиторий.</p>
-      <button class="button" type="button" id="statusButton">Отметить как готовый</button>
+    <section class="card wish-card">
+      <h2>Пожелание</h2>
+      <p id="wishText">Пусть сегодня всё получится легко.</p>
     </section>
   </main>
 
   <footer class="footer">
-    <p>Готово для практики с GitHub.</p>
+    <p>Сделано для практики с GitHub.</p>
   </footer>
 </body>
 </html>
