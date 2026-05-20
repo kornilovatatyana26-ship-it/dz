@@ -5,20 +5,27 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: #1f2937;
-  background: #fffaf0;
+  color: #5c3d4d;
+  background:
+    radial-gradient(circle at top left, #fff1a8 0, transparent 34%),
+    radial-gradient(circle at top right, #ffd6e7 0, transparent 30%),
+    #fff8ea;
 }
 
 .hero {
-  min-height: 52vh;
-  padding: 72px 24px 56px;
+  min-height: 68vh;
+  padding: 56px 24px 36px;
   display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 460px);
   place-items: center;
   align-content: center;
-  gap: 16px;
-  text-align: center;
-  color: #153243;
-  background: #f7c873;
+  gap: 36px;
+  color: #6b3f59;
+}
+
+.hero-text {
+  max-width: 560px;
+  text-align: left;
 }
 
 .eyebrow {
@@ -26,43 +33,75 @@ body {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #b86b8a;
 }
 
 .hero h1 {
-  margin: 0;
-  font-size: 56px;
+  margin: 12px 0 10px;
+  font-size: 64px;
+  line-height: 1;
 }
 
 .hero p {
   margin: 0;
-  font-size: 20px;
+  font-size: 22px;
+}
+
+.pet-picture {
+  width: min(100%, 460px);
+  margin: 0;
+}
+
+.pet-picture img {
+  display: block;
+  width: 100%;
+  border: 8px solid #fff7da;
+  border-radius: 28px;
+  box-shadow: 0 24px 50px rgba(184, 107, 138, 0.22);
 }
 
 .content {
-  width: min(920px, calc(100% - 32px));
-  margin: 32px auto;
+  width: min(900px, calc(100% - 32px));
+  margin: 0 auto 40px;
   display: grid;
   gap: 20px;
 }
 
 .card {
-  padding: 24px;
-  border: 1px solid #d6d3ca;
-  border-radius: 8px;
-  background: #ffffff;
+  padding: 28px;
+  border: 1px solid #ffd5e4;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 16px 32px rgba(196, 123, 149, 0.12);
 }
 
 .card h2 {
   margin-top: 0;
-  color: #153243;
-}
-
-.card li {
-  margin-bottom: 8px;
+  color: #8f4f70;
 }
 
 .wish-card {
-  border-left: 5px solid #2f855a;
+  border-left: 6px solid #f7c873;
+}
+
+.pet-notes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.mini-card {
+  padding: 22px;
+  border: 1px solid #ffd5e4;
+  border-radius: 18px;
+  background: #fffdf8;
+}
+
+.mini-card span {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #b86b8a;
+  font-weight: 700;
 }
 
 .button {
@@ -70,22 +109,43 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 44px;
+  margin-top: 24px;
   padding: 0 18px;
   border: 0;
-  border-radius: 8px;
-  color: #fffaf0;
+  border-radius: 999px;
+  color: #5c3d4d;
   font: inherit;
   font-weight: 700;
-  background: #153243;
+  background: #fff0a8;
+  box-shadow: 0 10px 24px rgba(184, 107, 138, 0.18);
   cursor: pointer;
 }
 
 .button:hover {
-  background: #24536d;
+  background: #ffd6e7;
 }
 
 .footer {
   padding: 24px;
   text-align: center;
-  color: #5b6472;
+  color: #8f4f70;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+  }
+
+  .pet-notes {
+    grid-template-columns: 1fr;
+  }
 }
