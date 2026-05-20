@@ -13,4 +13,5 @@ predictionButton.addEventListener("click", () => {
   const randomIndex = Math.floor(Math.random() * predictions.length);
   predictionText.textContent = predictions[randomIndex];
   predictionText.classList.add("is-visible");
+  predictionButton.blur();
 });

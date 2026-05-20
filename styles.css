@@ -9,40 +9,49 @@ body {
 
 body {
   margin: 0;
-  overflow: hidden;
   font-family: Arial, sans-serif;
   background: #fff9a8;
 }
 
 .poster {
-  position: relative;
   width: 100vw;
   height: 100vh;
-  min-height: 520px;
+  min-height: 100dvh;
   display: grid;
   place-items: center;
+  padding: 16px;
   background: #fff9a8;
+}
+
+.poster-frame {
+  position: relative;
+  width: min(100%, calc((100vh - 32px) * 16 / 9));
+  width: min(100%, calc((100dvh - 32px) * 16 / 9));
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #fff9a8;
+  box-shadow: 0 18px 40px rgba(128, 74, 64, 0.14);
 }
 
 .poster-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  display: block;
+  object-fit: contain;
 }
 
 .prediction-button {
   position: absolute;
   left: 50%;
-  top: 72%;
-  width: min(42vw, 580px);
-  min-width: 320px;
-  min-height: 72px;
+  top: 79.9%;
+  width: 41.6%;
+  height: 11.8%;
   transform: translateX(-50%);
   border: 0;
-  border-radius: 22px;
+  border-radius: 20px;
   background: rgba(233, 114, 103, 0.01);
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .prediction-button:focus-visible {
@@ -53,14 +62,14 @@ body {
 .prediction {
   position: absolute;
   left: 50%;
-  bottom: 24px;
-  width: min(680px, calc(100% - 32px));
+  bottom: 2.2%;
+  width: min(52%, 680px);
   margin: 0;
-  padding: 14px 18px;
+  padding: 1.1% 1.8%;
   transform: translateX(-50%);
   border-radius: 18px;
   color: #8c4b58;
-  font-size: clamp(16px, 2vw, 22px);
+  font-size: clamp(14px, 1.7vw, 22px);
   font-weight: 700;
   text-align: center;
   background: rgba(255, 249, 168, 0.86);
@@ -75,17 +84,32 @@ body {
 
 @media (max-width: 760px) {
   .poster {
-    min-height: 100vh;
+    padding: 0;
+  }
+
+  .poster-frame {
+    width: 100%;
+    height: 100dvh;
+    aspect-ratio: auto;
   }
 
   .poster-image {
     object-fit: cover;
+    object-position: center;
   }
 
   .prediction-button {
-    top: 71%;
-    width: 76vw;
-    min-width: 0;
-    min-height: 58px;
+    top: 80%;
+    width: 96%;
+    height: 11%;
+    border-radius: 14px;
+  }
+
+  .prediction {
+    bottom: 1.8%;
+    width: 88%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 14px;
   }
 }
