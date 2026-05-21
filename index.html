@@ -8,17 +8,15 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <main class="poster" aria-label="Хорошего дня">
-    <section class="poster-frame">
-      <img class="poster-image" src="assets/cat-day-mockup.jpeg" alt="Котик с цветком и надписью Хорошего дня">
+  <main class="greeting">
+    <img class="greeting-image" src="assets/cat-hero.png" alt="Улыбающийся котик с жёлтым цветком">
+    <div class="greeting-shade" aria-hidden="true"></div>
 
-      <button
-        class="prediction-button"
-        type="button"
-        id="predictionButton"
-        aria-label="получить ежедневное предсказание"
-      ></button>
-
+    <section class="greeting-content" aria-label="Хорошего дня">
+      <h1>Хорошего дня</h1>
+      <button class="prediction-button" type="button" id="predictionButton">
+        Забрать предсказание
+      </button>
       <p class="prediction" id="predictionText" aria-live="polite"></p>
     </section>
   </main>
